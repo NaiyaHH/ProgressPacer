@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ProgressPacer.Models.Module>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ModuleCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModuleName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumCredits)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumWeeks)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClassHours)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SelfStudy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModuleCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModuleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumCredits)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumWeeks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassHours)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SelfStudy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                    <a asp-action="Details" asp-route-id="@item.MId">Details</a>
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

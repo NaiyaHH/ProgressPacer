@@ -1,0 +1,45 @@
+﻿
+@{
+	ViewData["Title"] = "Weekly Study Hours";
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script>
+		window.onload = function () {
+
+			
+
+			var chart = new CanvasJS.Chart("chartContainer", {
+				animationEnabled: true,
+				title: {
+					text: @Html.Raw(ViewBag.Name)
+				},
+				toolTip: {
+					shared: true
+				},
+				data: [{
+					type: "line",
+					name: @Html.Raw(ViewBag.Code),
+					showInLegend: true,
+					dataPoints: @Html.Raw(ViewBag.DataPoints1)
+							} , {
+					type: "line",
+					name: @Html.Raw(ViewBag.Hours),
+					showInLegend: true,
+					dataPoints: @Html.Raw(ViewBag.DataPoints2)
+			}]
+
+			});
+			chart.render();
+
+		}
+	</script>
+</head>
+<body>
+		<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+		<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+	
+	
+</body>
+</html>       
