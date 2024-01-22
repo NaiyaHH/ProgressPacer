@@ -1,4 +1,4 @@
-# Progress Pacer - ST10033475 PROG6212 PART 1 Naiya Haribhai
+# Progress Pacer 
 This is a time tracking application (with an intuitive graphic user interface) for college students; allowing them to sign up, to sign in,  to add an unlimited number of modules (with all of their information, the application will then calculate the module's total weekly self study hours), log study hours for each of those modules, and view information regarding a module; while saving the user information and module information . It is written in C# (pronounced “C-Sharp”) and was created using Visual Studio 2022 (which would also be required to run this application) it uses the ADO.NET connection string format; and the database management application used for to createh the database is SQL Server Management Studio 2019. 
 
 
