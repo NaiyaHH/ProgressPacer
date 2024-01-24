@@ -10,9 +10,6 @@ This is a time tracking web application for college students; allowing them to s
 - [Structure of Progress Pacer](#structure-of-progress-pacer)
 - [Comparison of POE Part 1 Class Diagram POE Part 2 Class Diagram and POE Part 3 Class Diagram](#Comparison-of-POE-Part-1-Class-Diagram-POE-Part-2-Class-Diagram-and-POE-Part-3-Class-Diagram)
 - [Implementation of Feedback](#implementation-of-feedback)
-- [Installation and Running of the Application](#installation-and-running-of-the-application)
-   + [Requirements to install the project](#requirements-to-install-the-project)
-   + [How to install and run the application](#how-to-install-and-run-the-application)
 - [License](#license)
 - [References](#references)
 
@@ -93,28 +90,6 @@ I removed the 'MainWindow', 'AddModule',  'SelfStudyHours' and the 'DisplayModul
 ## Implementation of Feedback
 For the previous part of this portfolio of evidence, I had obtained 100%, therefore there was no updates or changes that needed to be implemented based on feedback.
 
-## Installation and running of the Application
-### Requirements to install the project
-1. Microsoft Visual Studio
-2. A computer device with at least an Intel Celeron Processor, 4GB of RAM and an Internet connection.
-3. A GitHub account (to clone the repository).
-4. SQL Server Management Studio 19
-5. The database script
-
-### How to install and run the application:
-1. Go to https://visualstudio.microsoft.com/vs/ and click 'Download'.
-2. Click on 'Community 2022'.
-3. Double click the 'VisualStudioSetup.exe' file.
-4. Follow the prompts to download Microsoft Visual Studio.
-5. Once you have Microsoft Visual Studio set up, go to https://github.com/
-6. Sign up or sign into GitHub.
-7. Go to https://github.com/VCDBN/prog6212-poe-ST10033475/tree/master
-8. Copy the following link: https://github.com/VCDBN/prog6212-poe-ST10033475/tree/master (by pressing ‘CTRL’ and ‘C’ at the same time on your keyboard).
-9. Go back to Visual Studio, and click on ‘Clone a Repository’.
-10. Paste the link where you are prompted to paste link (by pressing ‘CTRL’ and ‘V’ at the same time on your keyboard).
-11. Press ‘ENTER’ to clone the repository.
-12. Run the database script in SSMS 19 and replace the current connection string with your own connection string
-13. To run the application, click on the green triangle or Play button that is located at the middle top of the screen to start the application.
 
 ## License
 MIT License - [LICENSE](LICENSE)
